@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom PCs Mel | Custom & Prebuilt Gaming PCs</title>
-  <meta name="description" content="Custom and prebuilt gaming PCs made with quality parts. Request a quote for your custom build.">
+  <title>Custom PCs Mel | Prebuilt & Custom Gaming PCs</title>
+  <meta name="description" content="Custom and prebuilt gaming PCs with full parts lists and brands. Request a quote for your custom build.">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -57,7 +57,7 @@
     /* Product cards */
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
       margin-top: 30px;
     }
@@ -66,13 +66,18 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px #000;
-      text-align: center;
     }
     .card h3 {
       color: #00ff99;
+      margin-bottom: 5px;
     }
     .card p {
       color: #aaa;
+    }
+    .card ul {
+      margin: 10px 0;
+      padding-left: 20px;
+      color: #ccc;
     }
 
     /* Forms */
@@ -148,183 +153,220 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Custom PCs Mel</h1>
-    <p>Affordable Custom & Prebuilt PCs — Built with Passion in Melbourne</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#products">PC Builds</a>
-    <a href="#custom-build">Custom Build</a>
-    <a href="#support">Support</a>
-  </nav>
+<header>
+  <h1>Custom PCs Mel</h1>
+  <p>Prebuilt & Custom Gaming PCs — Built with Passion in Melbourne</p>
+</header>
 
-  <!-- ABOUT SECTION -->
-  <section id="about">
-    <h2>About</h2>
-    <p class="center">
-      I'm a young PC builder based in Melbourne creating reliable, affordable gaming and workstation PCs.  
-      Choose a prebuilt or request a fully custom setup — I’ll get you the best performance for your budget.
-    </p>
-  </section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#products">Prebuilt PCs</a>
+  <a href="#custom-build">Custom Build</a>
+  <a href="#support">Support</a>
+</nav>
 
-  <!-- PRODUCTS SECTION -->
-  <section id="products">
-    <h2>Example Builds</h2>
-    <div class="products">
-      <div class="card">
-        <h3>Starter Build</h3>
-        <p>Great for Minecraft, Fortnite, and school work.</p>
-        <p><strong>$600 - $800</strong></p>
-      </div>
-      <div class="card">
-        <h3>Mid-Range Build</h3>
-        <p>1080p gaming and basic editing.</p>
-        <p><strong>$900 - $1200</strong></p>
-      </div>
-      <div class="card">
-        <h3>High-End Build</h3>
-        <p>RTX & Ryzen powered for gaming and streaming.</p>
-        <p><strong>$1500+</strong></p>
-      </div>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About</h2>
+  <p class="center">
+    I’m a young PC builder based in Melbourne creating reliable, affordable gaming and workstation PCs.  
+    Choose a prebuilt or request a fully custom setup — I’ll get you the best performance for your budget.
+  </p>
+</section>
+
+<!-- PREBUILT PCs -->
+<section id="products">
+  <h2>Prebuilt PCs</h2>
+  <div class="products">
+
+    <!-- Starter Build -->
+    <div class="card">
+      <h3>Starter Build</h3>
+      <p>Perfect for Minecraft, Fortnite, and school work.</p>
+      <ul>
+        <li><strong>CPU:</strong> Intel Core i5-12400F (Intel)</li>
+        <li><strong>GPU:</strong> NVIDIA GTX 1660 Super (Gigabyte)</li>
+        <li><strong>RAM:</strong> 16GB DDR4 3200MHz (Corsair)</li>
+        <li><strong>Storage:</strong> 500GB NVMe SSD (Samsung)</li>
+        <li><strong>Motherboard:</strong> ASUS B660M-A</li>
+        <li><strong>Power Supply:</strong> 550W 80+ Bronze (Corsair)</li>
+        <li><strong>Case:</strong> NZXT H510</li>
+        <li><strong>Cooling:</strong> Stock CPU Cooler</li>
+      </ul>
+      <p><strong>Price:</strong> $750 AUD</p>
     </div>
-  </section>
 
-  <!-- CUSTOM PC BUILDER / QUOTE FORM -->
-  <section id="custom-build">
-    <h2>Build Your Custom PC</h2>
-    <p class="center">Select your preferred components and request a quote. I’ll reply directly to your email.</p>
-
-    <div class="form-container">
-      <form id="custom-pc-form">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="from_name" placeholder="Enter your name" required>
-
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="from_email" placeholder="Enter your email" required>
-
-        <label for="cpu">CPU</label>
-        <select id="cpu" name="cpu">
-          <option>Intel i5</option>
-          <option>Intel i7</option>
-          <option>Intel i9</option>
-          <option>AMD Ryzen 5</option>
-          <option>AMD Ryzen 7</option>
-          <option>AMD Ryzen 9</option>
-        </select>
-
-        <label for="gpu">GPU</label>
-        <select id="gpu" name="gpu">
-          <option>NVIDIA RTX 3060</option>
-          <option>NVIDIA RTX 3070</option>
-          <option>NVIDIA RTX 4070 Ti</option>
-          <option>AMD RX 6600</option>
-          <option>AMD RX 6700</option>
-        </select>
-
-        <label for="ram">RAM</label>
-        <select id="ram" name="ram">
-          <option>16GB</option>
-          <option>32GB</option>
-          <option>64GB</option>
-        </select>
-
-        <label for="storage">Storage</label>
-        <select id="storage" name="storage">
-          <option>500GB SSD</option>
-          <option>1TB SSD</option>
-          <option>2TB SSD</option>
-          <option>1TB HDD + 500GB SSD</option>
-        </select>
-
-        <label for="case">Case</label>
-        <select id="case" name="case">
-          <option>Standard ATX</option>
-          <option>RGB Gaming</option>
-          <option>Mini Tower</option>
-        </select>
-
-        <label for="psu">Power Supply</label>
-        <select id="psu" name="psu">
-          <option>550W</option>
-          <option>650W</option>
-          <option>750W</option>
-          <option>850W</option>
-        </select>
-
-        <label for="details">Extra Details (optional)</label>
-        <textarea id="details" name="details" placeholder="Preferred brands, parts, or special requests..."></textarea>
-
-        <button type="submit">Request Quote</button>
-        <p id="status"></p>
-      </form>
+    <!-- Mid-Range Build -->
+    <div class="card">
+      <h3>Mid-Range Build</h3>
+      <p>1080p gaming and basic editing.</p>
+      <ul>
+        <li><strong>CPU:</strong> AMD Ryzen 5 5600X (AMD)</li>
+        <li><strong>GPU:</strong> NVIDIA RTX 3060 Ti (MSI)</li>
+        <li><strong>RAM:</strong> 32GB DDR4 3600MHz (G.Skill)</li>
+        <li><strong>Storage:</strong> 1TB NVMe SSD (Western Digital)</li>
+        <li><strong>Motherboard:</strong> MSI B550-A Pro</li>
+        <li><strong>Power Supply:</strong> 650W 80+ Gold (Corsair)</li>
+        <li><strong>Case:</strong> Fractal Design Meshify C</li>
+        <li><strong>Cooling:</strong> Cooler Master Hyper 212</li>
+      </ul>
+      <p><strong>Price:</strong> $1,200 AUD</p>
     </div>
-  </section>
 
-  <!-- SUPPORT / FAQ SECTION -->
-  <section id="support">
-    <h2>Support & FAQ</h2>
-    <div class="faq-item">
-      <h4>How long does it take to get a quote?</h4>
-      <p>Usually within 24-48 hours. You’ll get an email with a detailed price and specs.</p>
+    <!-- High-End Build -->
+    <div class="card">
+      <h3>High-End Build</h3>
+      <p>For serious gamers and content creators.</p>
+      <ul>
+        <li><strong>CPU:</strong> AMD Ryzen 9 7900X (AMD)</li>
+        <li><strong>GPU:</strong> NVIDIA RTX 4070 Ti (EVGA)</li>
+        <li><strong>RAM:</strong> 64GB DDR5 6000MHz (Corsair)</li>
+        <li><strong>Storage:</strong> 2TB NVMe SSD (Samsung)</li>
+        <li><strong>Motherboard:</strong> ASUS ROG Crosshair X670E</li>
+        <li><strong>Power Supply:</strong> 850W 80+ Gold (Seasonic)</li>
+        <li><strong>Case:</strong> Lian Li PC-O11 Dynamic</li>
+        <li><strong>Cooling:</strong> NZXT Kraken X63 AIO</li>
+      </ul>
+      <p><strong>Price:</strong> $3,200 AUD</p>
     </div>
-    <div class="faq-item">
-      <h4>Do you ship PCs?</h4>
-      <p>Yes! Shipping options and prices are provided in your quote email.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Can I choose my own parts?</h4>
-      <p>Absolutely. Use the custom PC builder form to select your preferred components.</p>
-    </div>
-  </section>
 
-  <footer>
-    © 2025 Custom PCs Mel — Built with passion by a 14-year-old PC enthusiast 💻
-  </footer>
+  </div>
+</section>
 
-  <!-- EMAILJS SCRIPT -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function(){
-      emailjs.init("u_jcEW4JY99sPmgBz"); // Your public key
-    })();
+<!-- CUSTOM PC BUILDER -->
+<section id="custom-build">
+  <h2>Build Your Custom PC</h2>
+  <p class="center">Select your preferred components and request a quote. I’ll reply directly to your email.</p>
 
-    const form = document.getElementById("custom-pc-form");
-    const statusEl = document.getElementById("status");
+  <div class="form-container">
+    <form id="custom-pc-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="from_name" placeholder="Enter your name" required>
 
-    form.addEventListener("submit", function(event){
-      event.preventDefault();
-      const button = form.querySelector("button");
-      button.disabled = true;
-      button.textContent = "Sending...";
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="from_email" placeholder="Enter your email" required>
 
-      emailjs.send("service_x1u4oxd", "template_z7ioggj", {
-        from_name: document.getElementById("name").value,
-        from_email: document.getElementById("email").value,
-        cpu: document.getElementById("cpu").value,
-        gpu: document.getElementById("gpu").value,
-        ram: document.getElementById("ram").value,
-        storage: document.getElementById("storage").value,
-        case: document.getElementById("case").value,
-        psu: document.getElementById("psu").value,
-        details: document.getElementById("details").value,
-        date_sent: new Date().toLocaleString()
-      })
-      .then(() => {
-        statusEl.textContent = "✅ Quote request sent successfully!";
-        statusEl.className = "success";
-        form.reset();
-      })
-      .catch(() => {
-        statusEl.textContent = "❌ Failed to send. Please try again.";
-        statusEl.className = "error";
-      })
-      .finally(() => {
-        button.disabled = false;
-        button.textContent = "Request Quote";
-      });
+      <label for="cpu">CPU</label>
+      <select id="cpu" name="cpu">
+        <option>Intel i5</option>
+        <option>Intel i7</option>
+        <option>Intel i9</option>
+        <option>AMD Ryzen 5</option>
+        <option>AMD Ryzen 7</option>
+        <option>AMD Ryzen 9</option>
+      </select>
+
+      <label for="gpu">GPU</label>
+      <select id="gpu" name="gpu">
+        <option>NVIDIA GTX 1660 Super</option>
+        <option>NVIDIA RTX 3060 Ti</option>
+        <option>NVIDIA RTX 4070 Ti</option>
+        <option>AMD RX 6600</option>
+        <option>AMD RX 6700 XT</option>
+      </select>
+
+      <label for="ram">RAM</label>
+      <select id="ram" name="ram">
+        <option>16GB</option>
+        <option>32GB</option>
+        <option>64GB</option>
+      </select>
+
+      <label for="storage">Storage</label>
+      <select id="storage" name="storage">
+        <option>500GB SSD</option>
+        <option>1TB SSD</option>
+        <option>2TB SSD</option>
+        <option>1TB HDD + 500GB SSD</option>
+      </select>
+
+      <label for="case">Case</label>
+      <select id="case" name="case">
+        <option>Standard ATX</option>
+        <option>RGB Gaming</option>
+        <option>Mini Tower</option>
+      </select>
+
+      <label for="psu">Power Supply</label>
+      <select id="psu" name="psu">
+        <option>550W</option>
+        <option>650W</option>
+        <option>750W</option>
+        <option>850W</option>
+      </select>
+
+      <label for="details">Extra Details (optional)</label>
+      <textarea id="details" name="details" placeholder="Preferred brands, parts, or special requests..."></textarea>
+
+      <button type="submit">Request Quote</button>
+      <p id="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- SUPPORT / FAQ -->
+<section id="support">
+  <h2>Support & FAQ</h2>
+  <div class="faq-item">
+    <h4>How long does it take to get a quote?</h4>
+    <p>Usually within 24-48 hours. You’ll get an email with a detailed price and specs.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Do you ship PCs?</h4>
+    <p>Yes! Shipping options and prices are provided in your quote email.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Can I choose my own parts?</h4>
+    <p>Absolutely. Use the custom PC builder form to select your preferred components.</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Custom PCs Mel — Built with passion by a 14-year-old PC enthusiast 💻
+</footer>
+
+<!-- EMAILJS SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){ emailjs.init("u_jcEW4JY99sPmgBz"); })();
+
+  const form = document.getElementById("custom-pc-form");
+  const statusEl = document.getElementById("status");
+
+  form.addEventListener("submit", function(event){
+    event.preventDefault();
+    const button = form.querySelector("button");
+    button.disabled = true;
+    button.textContent = "Sending...";
+
+    emailjs.send("service_x1u4oxd", "template_z7ioggj", {
+      from_name: document.getElementById("name").value,
+      from_email: document.getElementById("email").value,
+      cpu: document.getElementById("cpu").value,
+      gpu: document.getElementById("gpu").value,
+      ram: document.getElementById("ram").value,
+      storage: document.getElementById("storage").value,
+      case: document.getElementById("case").value,
+      psu: document.getElementById("psu").value,
+      details: document.getElementById("details").value,
+      date_sent: new Date().toLocaleString()
+    })
+    .then(() => {
+      statusEl.textContent = "✅ Quote request sent successfully!";
+      statusEl.className = "success";
+      form.reset();
+    })
+    .catch(() => {
+      statusEl.textContent = "❌ Failed to send. Please try again.";
+      statusEl.className = "error";
+    })
+    .finally(() => {
+      button.disabled = false;
+      button.textContent = "Request Quote";
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
