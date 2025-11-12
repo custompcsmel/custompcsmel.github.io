@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Custom PCs Mel | Custom & Prebuilt Gaming PCs</title>
-  <meta name="description" content="Affordable custom and prebuilt gaming PCs made with quality parts. Built by hand in Melbourne, Australia. Request your custom quote today!">
+  <meta name="description" content="Custom and prebuilt gaming PCs made with quality parts. Request a quote for your custom build.">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -74,21 +74,8 @@
     .card p {
       color: #aaa;
     }
-    .card button {
-      background: #00ff99;
-      color: #000;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-    .card button:hover {
-      background: #00cc7a;
-    }
 
-    /* Contact / quote form */
+    /* Forms */
     .form-container {
       background: #181818;
       padding: 30px;
@@ -134,6 +121,22 @@
     #status.success { color: #00ff99; }
     #status.error { color: #ff5555; }
 
+    /* FAQ / Support */
+    .faq-item {
+      margin-bottom: 15px;
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .faq-item h4 {
+      margin: 0 0 5px 0;
+      color: #00ff99;
+    }
+    .faq-item p {
+      margin: 0;
+      color: #ccc;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -144,7 +147,6 @@
     }
   </style>
 </head>
-
 <body>
   <header>
     <h1>Custom PCs Mel</h1>
@@ -154,99 +156,158 @@
   <nav>
     <a href="#about">About</a>
     <a href="#products">PC Builds</a>
-    <a href="#quote">Get a Quote</a>
-    <a href="#contact">Contact</a>
+    <a href="#custom-build">Custom Build</a>
+    <a href="#support">Support</a>
   </nav>
 
+  <!-- ABOUT SECTION -->
   <section id="about">
     <h2>About</h2>
     <p class="center">
-      I'm a young PC builder based in Melbourne who creates reliable, affordable gaming and workstation PCs.  
-      Whether you need a prebuilt for plug-and-play performance or a full custom setup, I’ll help you get the best build for your budget.
+      I'm a young PC builder based in Melbourne creating reliable, affordable gaming and workstation PCs.  
+      Choose a prebuilt or request a fully custom setup — I’ll get you the best performance for your budget.
     </p>
   </section>
 
+  <!-- PRODUCTS SECTION -->
   <section id="products">
     <h2>Example Builds</h2>
     <div class="products">
       <div class="card">
         <h3>Starter Build</h3>
-        <p>Perfect for Minecraft, Fortnite, and school work.</p>
+        <p>Great for Minecraft, Fortnite, and school work.</p>
         <p><strong>$600 - $800</strong></p>
       </div>
       <div class="card">
         <h3>Mid-Range Build</h3>
-        <p>Great for 1080p gaming and editing.</p>
+        <p>1080p gaming and basic editing.</p>
         <p><strong>$900 - $1200</strong></p>
       </div>
       <div class="card">
         <h3>High-End Build</h3>
-        <p>For serious gamers and creators. RTX & Ryzen powered.</p>
+        <p>RTX & Ryzen powered for gaming and streaming.</p>
         <p><strong>$1500+</strong></p>
       </div>
     </div>
   </section>
 
-  <section id="quote">
-    <h2>Get a Custom PC Quote</h2>
+  <!-- CUSTOM PC BUILDER / QUOTE FORM -->
+  <section id="custom-build">
+    <h2>Build Your Custom PC</h2>
+    <p class="center">Select your preferred components and request a quote. I’ll reply directly to your email.</p>
+
     <div class="form-container">
-      <form id="quote-form">
-        <label for="q_name">Your Name</label>
-        <input type="text" id="q_name" name="from_name" placeholder="Enter your name" required>
+      <form id="custom-pc-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="from_name" placeholder="Enter your name" required>
 
-        <label for="q_email">Your Email</label>
-        <input type="email" id="q_email" name="from_email" placeholder="Enter your email" required>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="from_email" placeholder="Enter your email" required>
 
-        <label for="budget">Your Budget (AUD)</label>
-        <input type="text" id="budget" name="budget" placeholder="e.g. $1000" required>
+        <label for="cpu">CPU</label>
+        <select id="cpu" name="cpu">
+          <option>Intel i5</option>
+          <option>Intel i7</option>
+          <option>Intel i9</option>
+          <option>AMD Ryzen 5</option>
+          <option>AMD Ryzen 7</option>
+          <option>AMD Ryzen 9</option>
+        </select>
 
-        <label for="use">Main Use</label>
-        <select id="use" name="use">
-          <option>Gaming</option>
-          <option>School / Office</option>
-          <option>Editing / Streaming</option>
-          <option>Other</option>
+        <label for="gpu">GPU</label>
+        <select id="gpu" name="gpu">
+          <option>NVIDIA RTX 3060</option>
+          <option>NVIDIA RTX 3070</option>
+          <option>NVIDIA RTX 4070 Ti</option>
+          <option>AMD RX 6600</option>
+          <option>AMD RX 6700</option>
+        </select>
+
+        <label for="ram">RAM</label>
+        <select id="ram" name="ram">
+          <option>16GB</option>
+          <option>32GB</option>
+          <option>64GB</option>
+        </select>
+
+        <label for="storage">Storage</label>
+        <select id="storage" name="storage">
+          <option>500GB SSD</option>
+          <option>1TB SSD</option>
+          <option>2TB SSD</option>
+          <option>1TB HDD + 500GB SSD</option>
+        </select>
+
+        <label for="case">Case</label>
+        <select id="case" name="case">
+          <option>Standard ATX</option>
+          <option>RGB Gaming</option>
+          <option>Mini Tower</option>
+        </select>
+
+        <label for="psu">Power Supply</label>
+        <select id="psu" name="psu">
+          <option>550W</option>
+          <option>650W</option>
+          <option>750W</option>
+          <option>850W</option>
         </select>
 
         <label for="details">Extra Details (optional)</label>
         <textarea id="details" name="details" placeholder="Preferred brands, parts, or special requests..."></textarea>
 
-        <button type="submit">Send Quote Request</button>
+        <button type="submit">Request Quote</button>
         <p id="status"></p>
       </form>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p class="center">You can also message me via the form above, or on <a href="https://www.facebook.com/marketplace" target="_blank">Facebook Marketplace</a>.</p>
+  <!-- SUPPORT / FAQ SECTION -->
+  <section id="support">
+    <h2>Support & FAQ</h2>
+    <div class="faq-item">
+      <h4>How long does it take to get a quote?</h4>
+      <p>Usually within 24-48 hours. You’ll get an email with a detailed price and specs.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Do you ship PCs?</h4>
+      <p>Yes! Shipping options and prices are provided in your quote email.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Can I choose my own parts?</h4>
+      <p>Absolutely. Use the custom PC builder form to select your preferred components.</p>
+    </div>
   </section>
 
   <footer>
     © 2025 Custom PCs Mel — Built with passion by a 14-year-old PC enthusiast 💻
   </footer>
 
-  <!-- EMAILJS -->
+  <!-- EMAILJS SCRIPT -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
-    (function() {
-      emailjs.init("u_jcEW4JY99sPmgBz"); // your public key
+    (function(){
+      emailjs.init("u_jcEW4JY99sPmgBz"); // Your public key
     })();
 
-    const form = document.getElementById("quote-form");
+    const form = document.getElementById("custom-pc-form");
     const statusEl = document.getElementById("status");
 
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("submit", function(event){
       event.preventDefault();
       const button = form.querySelector("button");
       button.disabled = true;
       button.textContent = "Sending...";
 
       emailjs.send("service_x1u4oxd", "template_z7ioggj", {
-        from_name: document.getElementById("q_name").value,
-        from_email: document.getElementById("q_email").value,
-        budget: document.getElementById("budget").value,
-        use: document.getElementById("use").value,
+        from_name: document.getElementById("name").value,
+        from_email: document.getElementById("email").value,
+        cpu: document.getElementById("cpu").value,
+        gpu: document.getElementById("gpu").value,
+        ram: document.getElementById("ram").value,
+        storage: document.getElementById("storage").value,
+        case: document.getElementById("case").value,
+        psu: document.getElementById("psu").value,
         details: document.getElementById("details").value,
         date_sent: new Date().toLocaleString()
       })
@@ -256,12 +317,12 @@
         form.reset();
       })
       .catch(() => {
-        statusEl.textContent = "❌ Failed to send. Please try again later.";
+        statusEl.textContent = "❌ Failed to send. Please try again.";
         statusEl.className = "error";
       })
       .finally(() => {
         button.disabled = false;
-        button.textContent = "Send Quote Request";
+        button.textContent = "Request Quote";
       });
     });
   </script>
